@@ -586,6 +586,7 @@ section {
     position: absolute;
     z-index: -1;
     top: -405px;
+    overflow-x: hidden;
 }
 .frame img:first-child {
     left: -90px;
@@ -679,4 +680,51 @@ section {
     margin-top: 43px;
     width: 925px;
     height: 465px;
+}
+
+@media screen and (max-width: 1300px){
+    main {
+        min-width: 375px;
+    }
+    .not-mobile, .chose-place, .s2c-right, .TOR-last-container, .description>span, .foto-column>div:last-child,
+    .foto-column:last-child, .section-seven-container, .map, footer {
+        display: none;
+    }
+    .div-input, .type-of-repair {
+        flex-direction: column;
+    }
+    .header-container {
+        margin: 0 18px;
+        height: 57px;
+    }
+    .tel {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .section-one {
+        height: auto;
+    }
+    .section-one-container {
+        width: 375px;
+        padding: 85px 18px 61px;
+    }
+    h1 {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .section-one-container>p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .button-section-one {
+        width: 339px;
+    }
+    .button-section-one:first-child {
+        margin-bottom: 26px;
+    }
+    .other-button {
+        margin-left: 0;
+    }
 }
