@@ -681,6 +681,9 @@ section {
     width: 925px;
     height: 465px;
 }
+.mobile-cp-gallery {
+    display: none;
+}
 
 @media screen and (max-width: 1300px){
     main {
@@ -701,12 +704,13 @@ section {
         color: #FFFFFF;
         text-decoration: none;
     }
-    .section-one {
+    .section-one, .section-two {
         height: auto;
     }
     .section-one-container {
         width: 375px;
         padding: 85px 18px 61px;
+        box-sizing: border-box;
     }
     h1 {
         font-size: 23px;
@@ -721,10 +725,69 @@ section {
     .button-section-one {
         width: 339px;
     }
-    .button-section-one:first-child {
+    .section-one-container>.button-section-one:nth-child(3) {
         margin-bottom: 26px;
     }
     .other-button {
         margin-left: 0;
+    }
+    .section-two-container {
+        justify-content: center;
+        align-items: normal;
+        padding: 36px 18px 0;
+        box-sizing: border-box;
+    }
+    .s2c-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .s2c-left>p {
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+    .mobile-cp-gallery {
+        margin: 70px 0 36px;
+        width: 90vw;
+        height: 63vw;
+        background: url("/media/mobile-cp-gallery.png");
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-cp-gallery img {
+        width: 10vw;
+        height: 10vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .table {
+        padding: 0;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .table p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .table .row:last-child div:first-child p {
+        margin-bottom: 40px;
+    }
+    .table .row:last-child div:first-child p {
+        margin-bottom: 55px;
+    }
+    .section-three {
+        margin-top: 0;
     }
 }
