@@ -471,7 +471,8 @@ menu {
 
 .section-six {
     background: linear-gradient(109.8deg, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .9) 100%), url("../media/backsecond.png");
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: top;
     height: 864px;
 }
 .section-six-container {
@@ -677,7 +678,8 @@ menu {
 
 .section-nine {
     background: linear-gradient(180deg, rgba(24, 24, 24, .9) 3.47%, rgba(24, 24, 24, .72) 100%), url("../media/backthird.png");
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: top;
     height: 954px;
 }
 .section-nine-container {
