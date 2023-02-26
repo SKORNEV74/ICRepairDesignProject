@@ -586,6 +586,7 @@ section {
     position: absolute;
     z-index: -1;
     top: -405px;
+    overflow-x: hidden;
 }
 .frame img:first-child {
     left: -90px;
@@ -679,4 +680,339 @@ section {
     margin-top: 43px;
     width: 925px;
     height: 465px;
+}
+.mobile-cp-gallery, .checkbox-mobile, .mobile-map {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    header, main {
+        min-width: 375px;
+    }
+    .not-mobile, .chose-place, .s2c-right, .TOR-last-container, .description>span, .photo,
+    .foto-column:last-child, .section-seven-container, .map, footer, .checkbox-desktop {
+        display: none;
+    }
+    .div-input, .type-of-repair {
+        flex-direction: column;
+    }
+    .header-container {
+        margin: 0 18px;
+        height: 57px;
+    }
+    .tel {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .section-one, .section-two, .section-six, .section-eight, .section-nine {
+        height: auto;
+    }
+    .section-one-container {
+        width: 375px;
+        padding: 85px 18px 61px;
+        box-sizing: border-box;
+    }
+    h1 {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .section-one-container>p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .button-section-one {
+        width: 339px;
+    }
+    .section-one-container>.button-section-one:nth-child(3) {
+        margin-bottom: 26px;
+    }
+    .other-button {
+        margin-left: 0;
+    }
+    .section-two-container {
+        justify-content: center;
+        align-items: normal;
+        padding: 36px 18px 0;
+        box-sizing: border-box;
+    }
+    .s2c-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .s2c-left>p {
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        margin: 30px 0 0;
+    }
+    .mobile-cp-gallery, .mobile-desc-gallery {
+        margin: 70px 0 36px;
+        width: 90vw;
+        height: 63vw;
+        max-width: 817px;
+        max-height: 580px;
+        min-width: 340px;
+        min-height: 241px;
+        background: url("/media/mobile-cp-gallery.png");
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-cp-gallery img, .mobile-desc-gallery img {
+        width: 10vw;
+        height: 10vw;
+        max-width: 92px;
+        max-height: 92px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .table {
+        padding: 0;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .table p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .table .row:first-child div:first-child p {
+        margin-bottom: 40px;
+    }
+    .table .row:last-child div:first-child p {
+        margin-bottom: 55px;
+    }
+    .section-three {
+        margin-top: 0;
+        background-color: #131313;
+    }
+    .section-three-container>h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+    .video {
+        margin-top: 40px;
+        width: 90vw;
+        height: 48vw;
+        max-width: 817px;
+        max-height: 434px;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video img {
+        width: 16vw;
+        height: 16vw;
+        max-width: 145px;
+        max-height: 145px;
+    }
+    .section-four {
+        background-color: #131313;
+    }
+    .section-four-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-four-container>div:first-child>img {
+        margin: 28px 0 5px;
+    }
+    .section-four-container p {
+        font-size: 11px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+        padding: 0 18px 0;
+    }
+    .checkbox-mobile {
+        display: block;
+    }
+    .div-input {
+        width: 375px;
+        padding: 0 18px 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .div-input label.label-mobile {
+        width: 339px;
+    }
+    .div-input label.label-mobile:nth-child(1) {
+        margin-bottom: 65px;
+    }
+    .div-input label.label-mobile:nth-child(2) {
+        margin: 0;
+    }
+    .label-input-mobile {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, .5);
+    }
+    .input-mobile {
+        width: 339px;
+        height: 31px;
+        background: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .7);
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .input-mobile::placeholder {
+        color: #FFFFFF;
+    }
+    .checkbox-mobile {
+        margin: 26px 0 37px;
+    }
+    .checkbox-mobile>label.label-mobile:nth-child(1) {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .text-mobile {
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+        width: 300px;
+    }
+    .button-submit-mobile {
+        width: 339px;
+        position: relative;
+        top: 25px;
+    }
+    .section-five-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .section-five-container h3 {
+        margin: 85px 0 17px;
+    }
+    .type-of-repair {
+        width: 375px;
+        box-sizing: border-box;
+        margin: 40px 0 0;
+        padding: 0 18px 0;
+        align-self: center;
+    }
+    .cell {
+        width: 339px;
+        height: 365px;
+        margin-bottom: 178px;
+    }
+    .white-wall {
+        width: 270px;
+        height: 241px;
+        padding-left: 31px;
+        padding-top: 21px;
+        margin: 223px 69px -99px 0;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .white-wall h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .white-wall ul {
+        margin-bottom: 15px;
+    }
+    .button-sale {
+        margin-left: -30px;
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .section-six {
+        background: none;
+    }
+    .section-six-container {
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-desc-gallery {
+        margin: 0;
+        height: 64vw;
+        max-height: 581px;
+        min-height: 242px;
+        background: url("/media/wildest-fantasies.png");
+        background-size: 100% 100%;
+        z-index: 100;
+    }
+    .section-eight {
+        background-color: #181818;
+        margin-top: -121px;
+    }
+    .questions-form {
+        margin: 0;
+        padding: 175px 18px 0;
+        width: 375px;
+        height: auto;
+    }
+    .questions-form h3 {
+        margin-bottom: 55px;
+    }
+    .questions-form-div-input, .question-label-div-input {
+        padding: 0;
+        width: 339px;
+    }
+    .questions-form-input {
+        width: 339px;
+    }
+    .div-input label.label-question-mobile {
+        width: 339px;
+    }
+    .div-input label.label-question-mobile {
+        margin-bottom: 65px;
+    }
+    .questions-form-div-checkbox {
+        margin: -43px 0 67px;
+    }
+    .questions-form-button {
+        margin: 0;
+    }
+    .questions-form-button>.button-submit-mobile {
+        position: static;
+    }
+    .section-nine {
+        background: #181818;
+    }
+    .section-nine-container {
+        padding: 46px 0 49px;
+    }
+    .mobile-map {
+        display: block;
+        background: url("/media/mobile-map.png");
+        background-size: 100% 100%;
+        width: 90vw;
+        height: 68vw;
+        max-width: 817px;
+        max-height: 613px;
+        min-width: 340px;
+        min-height: 255px;
+    }
+    .section-nine-container h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 42px 0 24px;
+        padding: 0 18px 0;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .header-container, .footer-container {
+        width: 1300px;
+        margin: 0 auto;
+    }
 }
