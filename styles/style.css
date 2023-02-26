@@ -681,15 +681,15 @@ section {
     width: 925px;
     height: 465px;
 }
-.mobile-cp-gallery, .checkbox-mobile {
+.mobile-cp-gallery, .checkbox-mobile, .mobile-map {
     display: none;
 }
 
-@media screen and (max-width: 1300px){
-    main {
+@media screen and (max-width: 1300px) {
+    header, main {
         min-width: 375px;
     }
-    .not-mobile, .chose-place, .s2c-right, .TOR-last-container, .description>span, .foto-column>div:last-child,
+    .not-mobile, .chose-place, .s2c-right, .TOR-last-container, .description>span, .photo,
     .foto-column:last-child, .section-seven-container, .map, footer, .checkbox-desktop {
         display: none;
     }
@@ -704,7 +704,7 @@ section {
         color: #FFFFFF;
         text-decoration: none;
     }
-    .section-one, .section-two {
+    .section-one, .section-two, .section-six, .section-eight, .section-nine {
         height: auto;
     }
     .section-one-container {
@@ -754,19 +754,21 @@ section {
         text-align: center;
         margin: 30px 0 0;
     }
-    .mobile-cp-gallery {
+    .mobile-cp-gallery, .mobile-desc-gallery {
         margin: 70px 0 36px;
         width: 90vw;
         height: 63vw;
         max-width: 817px;
         max-height: 580px;
+        min-width: 340px;
+        min-height: 241px;
         background: url("/media/mobile-cp-gallery.png");
         background-size: 100% 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .mobile-cp-gallery img {
+    .mobile-cp-gallery img, .mobile-desc-gallery img {
         width: 10vw;
         height: 10vw;
         max-width: 92px;
@@ -889,5 +891,128 @@ section {
         position: relative;
         top: 25px;
     }
-
+    .section-five-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .section-five-container h3 {
+        margin: 85px 0 17px;
+    }
+    .type-of-repair {
+        width: 375px;
+        box-sizing: border-box;
+        margin: 40px 0 0;
+        padding: 0 18px 0;
+        align-self: center;
+    }
+    .cell {
+        width: 339px;
+        height: 365px;
+        margin-bottom: 178px;
+    }
+    .white-wall {
+        width: 270px;
+        height: 241px;
+        padding-left: 31px;
+        padding-top: 21px;
+        margin: 223px 69px -99px 0;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .white-wall h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .white-wall ul {
+        margin-bottom: 15px;
+    }
+    .button-sale {
+        margin-left: -30px;
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .section-six {
+        background: none;
+    }
+    .section-six-container {
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-desc-gallery {
+        margin: 0;
+        height: 64vw;
+        max-height: 581px;
+        min-height: 242px;
+        background: url("/media/wildest-fantasies.png");
+        background-size: 100% 100%;
+        z-index: 100;
+    }
+    .section-eight {
+        background-color: #181818;
+        margin-top: -121px;
+    }
+    .questions-form {
+        margin: 0;
+        padding: 175px 18px 0;
+        width: 375px;
+        height: auto;
+    }
+    .questions-form h3 {
+        margin-bottom: 55px;
+    }
+    .questions-form-div-input, .question-label-div-input {
+        padding: 0;
+        width: 339px;
+    }
+    .questions-form-input {
+        width: 339px;
+    }
+    .div-input label.label-question-mobile {
+        width: 339px;
+    }
+    .div-input label.label-question-mobile {
+        margin-bottom: 65px;
+    }
+    .questions-form-div-checkbox {
+        margin: -43px 0 67px;
+    }
+    .questions-form-button {
+        margin: 0;
+    }
+    .questions-form-button>.button-submit-mobile {
+        position: static;
+    }
+    .section-nine {
+        background: #181818;
+    }
+    .section-nine-container {
+        padding: 46px 0 49px;
+    }
+    .mobile-map {
+        display: block;
+        background: url("/media/mobile-map.png");
+        background-size: 100% 100%;
+        width: 90vw;
+        height: 68vw;
+        max-width: 817px;
+        max-height: 613px;
+        min-width: 340px;
+        min-height: 255px;
+    }
+    .section-nine-container h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 42px 0 24px;
+        padding: 0 18px 0;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .header-container, .footer-container {
+        width: 1300px;
+        margin: 0 auto;
+    }
 }
