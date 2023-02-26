@@ -1,14 +1,14 @@
 @font-face {
     font-family: NunitoSans-Italic;
-    src: url("/fonts/NunitoSans-Italic.ttf");
+    src: url("../fonts/NunitoSans-Italic.ttf");
 }
 @font-face {
     font-family: NunitoSans-Regular;
-    src: url("/fonts/NunitoSans-Regular.ttf");
+    src: url("../fonts/NunitoSans-Regular.ttf");
 }
 @font-face {
     font-family: YesevaOne-Regular;
-    src: url("/fonts/YesevaOne-Regular.ttf");
+    src: url("../fonts/YesevaOne-Regular.ttf");
 }
 
 
@@ -124,7 +124,7 @@ menu {
 
 /*Секции*/
 .section-one {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/media/backfirst.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../media/backfirst.jpg");
     background-size: 100% auto;
     height: 707px;
 }
@@ -229,7 +229,7 @@ menu {
     margin-top: 30px;
     width: 817px;
     height: 434px;
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/media/video.png");
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../media/video.png");
     text-align: center;
     line-height: 579px;
 }
@@ -308,13 +308,13 @@ menu {
     margin-bottom: 240px;
 }
 .Redecorating {
-    background: url("/media/redecorating.jpg");
+    background: url("../media/redecorating.jpg");
 }
 .Overhaul {
-    background: url("/media/overhaul.jpg");
+    background: url("../media/overhaul.jpg");
 }
 .Designer-Repair {
-    background: url("/media/designer.jpg");
+    background: url("../media/designer.jpg");
 }
 .white-wall {
     background: #FFFFFF;
@@ -469,7 +469,7 @@ menu {
 
 
 .section-six {
-    background: linear-gradient(109.8deg, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .9) 100%), url("/media/backsecond.png");
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .9) 100%), url("../media/backsecond.png");
     background-size: 100% auto;
     height: 864px;
 }
@@ -675,7 +675,7 @@ menu {
 
 
 .section-nine {
-    background: linear-gradient(180deg, rgba(24, 24, 24, .9) 3.47%, rgba(24, 24, 24, .72) 100%), url("/media/backthird.png");
+    background: linear-gradient(180deg, rgba(24, 24, 24, .9) 3.47%, rgba(24, 24, 24, .72) 100%), url("../media/backthird.png");
     background-size: 100% auto;
     height: 954px;
 }
@@ -785,7 +785,7 @@ menu {
         height: 63vw;
         max-height: 580px;
         min-height: 241px;
-        background: url("/media/mobile-cp-gallery.png");
+        background: url("../media/mobile-cp-gallery.png");
         background-size: 100% 100%;
         display: flex;
         justify-content: space-between;
@@ -977,7 +977,7 @@ menu {
         height: 64vw;
         max-height: 581px;
         min-height: 242px;
-        background: url("/media/wildest-fantasies.png");
+        background: url("../media/wildest-fantasies.png");
         background-size: 100% 100%;
         z-index: 100;
     }
@@ -1028,7 +1028,7 @@ menu {
     }
     .mobile-map {
         display: block;
-        background: url("/media/mobile-map.png");
+        background: url("../media/mobile-map.png");
         background-size: 100% 100%;
         width: 90vw;
         height: 68vw;
