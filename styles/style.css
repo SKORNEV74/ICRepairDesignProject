@@ -11,34 +11,13 @@
     src: url("/fonts/YesevaOne-Regular.ttf");
 }
 
+
+/*Общее*/
 body {
     margin: 0;
     font-family: NunitoSans-Regular, sans-serif;
     font-weight: 400;
     color: #181818;
-}
-header {
-    background-color: #131313;
-    font-size: 11px;
-    line-height: 15px;
-}
-footer {
-    background-color: #131313;
-    font-size: 11px;
-    line-height: 15px;
-}
-menu {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-.li-menu {
-    display: inline;
-    list-style-type: none;
-    padding-right: 47px;
-}
-.li-menu:last-child {
-    padding-right: 0;
 }
 a {
     text-decoration: none;
@@ -78,12 +57,53 @@ h5 {
     border-radius: 2px;
     box-shadow: 0 5px 15px rgba(227, 184, 115, .3);
 }
+section {
+    width: 100%;
+}
+.section-container {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+.input {
+    box-sizing: border-box;
+    width: 231px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, .3);
+    height: 30px;
+}
+.input::placeholder {
+    font-family: NunitoSans-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+
+/*Шапка и подвал*/
+header, footer {
+    background-color: #131313;
+    font-size: 11px;
+    line-height: 15px;
+}
 .header-container, .footer-container {
     margin: 0 90px;
     height: 83px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.li-menu {
+    display: inline;
+    list-style-type: none;
+    padding-right: 47px;
+}
+.li-menu:last-child {
+    padding-right: 0;
 }
 .a-header, .section-two p {
     color: #FFFFFF;
@@ -100,17 +120,13 @@ h5 {
     font-size: 11px;
     line-height: 15px;
 }
-section {
-    width: 100%;
-}
+
+
+/*Секции*/
 .section-one {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/media/backfirst.jpg");
     background-size: 100% auto;
     height: 707px;
-}
-.section-container {
-    max-width: 1263px;
-    margin: 0 auto;
 }
 .section-one-container {
     color: #FFFFFF;
@@ -134,6 +150,8 @@ section {
     background: none;
     margin-left: 20px;
 }
+
+
 .section-two {
     background-color: #131313;
     height: 1074px;
@@ -188,6 +206,8 @@ section {
     padding-bottom: 6px;
     border-bottom: 1px solid #E3B873;
 }
+
+
 .section-three {
     margin-top: -350px;
 }
@@ -213,6 +233,8 @@ section {
     text-align: center;
     line-height: 579px;
 }
+
+
 .section-four-container {
     text-align: center;
 }
@@ -238,19 +260,6 @@ section {
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
-}
-.input {
-    box-sizing: border-box;
-    width: 231px;
-    border: none;
-    border-bottom: 1px solid rgba(54, 54, 54, .3);
-    height: 30px;
-}
-.input::placeholder {
-    font-family: NunitoSans-Regular, sans-serif;
-    font-size: 14px;
-    line-height: 23px;
-    color: #363636;
 }
 .button-submit {
     width: 200px;
@@ -282,6 +291,8 @@ section {
     font-size: 14px;
     line-height: 23px;
 }
+
+
 .section-five-container {
     text-align: center;
     padding-bottom: 242px;
@@ -455,6 +466,8 @@ section {
     text-align: start;
     margin-left: 25px;
 }
+
+
 .section-six {
     background: linear-gradient(109.8deg, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .9) 100%), url("/media/backsecond.png");
     background-size: 100% auto;
@@ -498,6 +511,8 @@ section {
 .foto-cell {
     margin-bottom: 40px;
 }
+
+
 .section-seven-container {
     padding-top: 110px;
     text-align: center;
@@ -595,6 +610,8 @@ section {
     right: -90px;
     transform: scale(-1, 1);
 }
+
+
 .section-eight-container {
     display: flex;
     justify-content: center;
@@ -707,6 +724,13 @@ section {
     .section-one, .section-two, .section-six, .section-eight, .section-nine {
         height: auto;
     }
+    .mobile-cp-gallery, .mobile-desc-gallery, .video, .mobile-map {
+        width: 90vw;
+        max-width: 817px;
+        min-width: 340px;
+    }
+
+
     .section-one-container {
         width: 375px;
         padding: 85px 18px 61px;
@@ -731,6 +755,8 @@ section {
     .other-button {
         margin-left: 0;
     }
+
+
     .section-two-container {
         justify-content: center;
         align-items: normal;
@@ -756,11 +782,8 @@ section {
     }
     .mobile-cp-gallery, .mobile-desc-gallery {
         margin: 70px 0 36px;
-        width: 90vw;
         height: 63vw;
-        max-width: 817px;
         max-height: 580px;
-        min-width: 340px;
         min-height: 241px;
         background: url("/media/mobile-cp-gallery.png");
         background-size: 100% 100%;
@@ -793,6 +816,8 @@ section {
     .table .row:last-child div:first-child p {
         margin-bottom: 55px;
     }
+
+
     .section-three {
         margin-top: 0;
         background-color: #131313;
@@ -804,10 +829,9 @@ section {
     }
     .video {
         margin-top: 40px;
-        width: 90vw;
         height: 48vw;
-        max-width: 817px;
         max-height: 434px;
+        min-height: 207px;
         background-size: 100% 100%;
         display: flex;
         justify-content: center;
@@ -819,6 +843,8 @@ section {
         max-width: 145px;
         max-height: 145px;
     }
+
+
     .section-four {
         background-color: #131313;
     }
@@ -891,6 +917,8 @@ section {
         position: relative;
         top: 25px;
     }
+
+
     .section-five-container {
         display: flex;
         flex-direction: column;
@@ -934,6 +962,8 @@ section {
         font-size: 15px;
         line-height: 21px;
     }
+
+
     .section-six {
         background: none;
     }
@@ -951,6 +981,8 @@ section {
         background-size: 100% 100%;
         z-index: 100;
     }
+
+
     .section-eight {
         background-color: #181818;
         margin-top: -121px;
@@ -986,6 +1018,8 @@ section {
     .questions-form-button>.button-submit-mobile {
         position: static;
     }
+
+
     .section-nine {
         background: #181818;
     }
@@ -1010,6 +1044,7 @@ section {
         padding: 0 18px 0;
     }
 }
+
 @media screen and (min-width: 1300px) {
     .header-container, .footer-container {
         width: 1300px;
