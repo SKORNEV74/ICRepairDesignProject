@@ -698,7 +698,7 @@ menu {
     width: 925px;
     height: 465px;
 }
-.mobile-cp-gallery, .checkbox-mobile, .mobile-map {
+.mobile-cp-gallery, .mobile-desc-gallery, .checkbox-mobile, .mobile-map {
     display: none;
 }
 
