@@ -1054,3 +1054,21 @@ menu {
         margin: 0 auto;
     }
 }
+
+button:hover, .left-arrow:hover, .right-arrow:hover, .bull:hover, .video>img:hover, .fake:hover, .SNC-svg>img:hover {
+    cursor: pointer;
+}
+
+.comp:hover {
+    cursor: default;
+}
+
+a.tel:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.place:hover, .description>span:hover {
+    cursor: pointer;
+    color: #E3B873;
+}
