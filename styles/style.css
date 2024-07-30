@@ -56,7 +56,6 @@ h5 {
     border: none;
     border-radius: 2px;
     box-shadow: 0 5px 15px rgba(227, 184, 115, .3);
-    outline: none;
     transition: box-sizing .5s,
                 border .5s,
                 box-shadow .5s,
@@ -75,13 +74,15 @@ section {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, .3);
     height: 30px;
-    outline: none;
 }
 .input::placeholder {
     font-family: NunitoSans-Regular, sans-serif;
     font-size: 14px;
     line-height: 23px;
     color: #363636;
+}
+:is(input:focus, input:hover, button:focus, button:hover) {
+    outline: none;
 }
 
 
@@ -1057,7 +1058,7 @@ menu {
     }
 }
 
-button:hover, .left-arrow:hover, .right-arrow:hover, .bull:hover, .video>img:hover, .fake:hover, .SNC-svg>img:hover {
+:is(button, .left-arrow, .right-arrow, .bull, .video>img, .fake, .SNC-svg>img, .place, .description>span):hover {
     cursor: pointer;
 }
 
@@ -1070,8 +1071,7 @@ a.tel:hover {
     text-decoration: none;
 }
 
-.place:hover, .description>span:hover {
-    cursor: pointer;
+:is(.place, .description>span):hover {
     color: #E3B873;
 }
 
@@ -1082,13 +1082,10 @@ a.tel:hover {
     background: none;
 }
 
-.button-submit:hover, .button-sale:hover, .button-client:hover {
-    box-sizing: border-box;
+:is(.button-submit, .button-sale, .button-client):hover {
     border: 1px solid #131313;
-    box-shadow: none;
-    background: none;
 }
 
-.button-submit:hover, .button-sale:hover, .button-client:hover, .button-client:hover>span {
+:is(.button-submit, .button-sale, .button-client):hover, .button-client:hover>span {
     color: #363636;
 }
